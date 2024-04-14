@@ -4,27 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Vishal Logistics Mumbai</title>
     <link rel="stylesheet" href="contact_us.css">
 </head>
 
 <body>
-    <div class="contact-container">
-        <form action="#" class="contact-left">
-            <div class="contact-left-title">
-                <h2>Get in touch</h2>
-                <hr>
+
+    <header>
+        <nav>
+            <!-- Your navigation links here -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info">
+                    <div class="address">
+                        <h3>Our Location</h3>
+                        <p>Vishal Logistics Mumbai</p>
+                        <p>123 Main Street</p>
+                        <p>Mumbai, India</p>
+                    </div>
+                    <div class="phone">
+                        <h3>Phone</h3>
+                        <p>9322573981</p>
+                    </div>
+                    <div class="whatsapp">
+                        <h3>WhatsApp</h3>
+                        <img src="WhatsApp.jpg" alt="WhatsApp QR Code">
+                    </div>
+                </div>
+                <div class="map">
+                    <h3>Map</h3>
+                    <!-- Replace the src attribute with your Google Maps embed code -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9826714906064!2d72.8763658148905!3d19.071134757071043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91eeaf1fe4d%3A0x152c238f1e591b5b!2sGateway%20of%20India!5e0!3m2!1sen!2sin!4v1649838606680!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
-            <input type="email" name="email" placeholder="Email Address" class="contact-inputs" required>
-            <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
-            <button type="submit">Submit</button>
-            <a href="tel:+1234567890" class="contact-number">Call Us: +91 9322573981</a>
-        </form>
-        <div class="contact-right">
-            <img src="right_img.png" alt="">
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vishal Logistics Mumbai. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
