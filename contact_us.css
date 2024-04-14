@@ -75,3 +75,20 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .address,
+    .phone,
+    .whatsapp {
+        flex: 1 1 auto;
+    }
+}
