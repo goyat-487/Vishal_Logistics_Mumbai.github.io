@@ -92,3 +92,41 @@ footer {
         flex: 1 1 auto;
     }
 }
+
+/* Add this CSS to your existing styles */
+
+.whatsapp img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Media Queries for responsiveness */
+
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .address,
+    .phone,
+    .whatsapp {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+        /* Add some spacing between contact info items */
+        text-align: center;
+        /* Center align contact info items */
+    }
+    .whatsapp img {
+        max-width: 80%;
+        /* Adjust max-width of WhatsApp QR code */
+        height: auto;
+    }
+    iframe {
+        max-width: 100%;
+        /* Make sure the map iframe doesn't overflow */
+    }
+}
