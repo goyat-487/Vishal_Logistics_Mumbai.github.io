@@ -28,9 +28,109 @@
     <!-- 
     - preload images
   -->
+
+    <style>
+        /* Logo styles */
+        
+        .logo-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            animation: fadeOut 10s forwards;
+            opacity: 1;
+            transition: opacity 10s;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .letter {
+            font-size: 200px;
+            font-weight: bold;
+            margin: 0 10px;
+            color: #e50914;
+            /* Netflix red */
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+        
+        .white {
+            color: #fff;
+            /* White */
+        }
+        
+        .company-name {
+            font-size: 24px;
+            color: #fff;
+            /* White */
+            opacity: 0;
+            animation: reveal 0s forwards;
+            margin-top: 20px;
+        }
+        
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+        
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(2);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes reveal {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        /* Responsive Styles */
+        
+        @media screen and (max-width: 768px) {
+            .letter {
+                font-size: 100px;
+            }
+            .company-name {
+                font-size: 50px;
+            }
+        }
+    </style>
 </head>
 
 <body id="top">
+
+    <div class="logo-container">
+        <div class="logo">
+            <div class="letter red">V</div>
+            <div class="letter white">L</div>
+        </div>
+        <div class="company-name">Vishal Logistics <span class="red">Mumbai</span></div>
+    </div>
 
 
 
